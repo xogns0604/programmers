@@ -1,0 +1,21 @@
+//https://programmers.co.kr/learn/courses/30/lessons/42626
+
+package LV2.moreSpicy;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Solution {
+
+	 public int solution(int[] scoville, int K) {
+		 
+		 Arrays.sort(scoville);
+		 
+		 System.out.println(Arrays.toString(scoville));
+		 
+		 
+		 
+		 int answer = 0;
+		 return answer;
+    }
+}

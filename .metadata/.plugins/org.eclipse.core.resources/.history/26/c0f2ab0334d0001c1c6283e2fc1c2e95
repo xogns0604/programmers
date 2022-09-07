@@ -1,0 +1,26 @@
+//https://programmers.co.kr/learn/courses/30/lessons/42626
+
+package LV2.moreSpicy;
+
+import java.util.ArrayList;
+
+public class Solution {
+
+	 public int solution(int[] scoville, int K) {
+		 
+		 ArrayList<Integer> li = new ArrayList<>();
+		 
+		 for(int num : scoville) {
+			 if(num<K) li.add(num);
+		 }
+		 
+		 li.sort(null);
+		 
+		 
+		 
+		 
+		 
+		 int answer = 0;
+		 return answer;
+    }
+}
