@@ -1,0 +1,25 @@
+package LV1.TestPersonalityType;
+//https://school.programmers.co.kr/learn/courses/30/lessons/118666
+
+public class Solution {
+	public String solution(String[] survey, int[] choices) {
+		int[][] surveys = new int[2][4];
+		
+		for(int i=0 ; i<survey.length ; i++) {
+			if(survey[i].indexOf('R') != 1) {
+				
+			}
+		}
+		
+		
+		
+		
+        String answer = "";
+        return answer;
+    }
+	
+	
+	
+	
+	
+}
