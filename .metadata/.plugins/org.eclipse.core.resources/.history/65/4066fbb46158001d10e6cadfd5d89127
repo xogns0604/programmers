@@ -1,0 +1,16 @@
+package LV2.JadenCaseStr;
+
+
+public class Run {
+
+	public static void main(String[] args) {
+		
+		String str = "unFollowed";
+		
+		String cStr = str.substring(0,1).toUpperCase() + str.substring(1,str.length());
+		
+		System.out.println(cStr);
+		
+	}
+}
+

@@ -1,0 +1,20 @@
+//https://programmers.co.kr/learn/courses/30/lessons/1835
+
+package LV2.JadenCaseStr;
+
+public class Solution {
+	public String solution(String s) {
+		
+		String[] strs = s.replaceAll("  ", " ").split(" ");
+		
+		String answer = "";
+		
+		for(String str : strs) {
+			answer += str.substring(0,1).toUpperCase() + (str.substring(1,str.length()).toLowerCase());
+			answer += " ";
+		}
+		
+        return answer.trim();
+    }
+}
+

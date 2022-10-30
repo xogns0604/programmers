@@ -1,0 +1,13 @@
+package LV2.JadenCaseStr;
+
+
+public class Run {
+
+	public static void main(String[] args) {
+		
+		System.out.println(new Solution().solution("3people      unF345236ollowed      m23532s"));
+		
+	}
+}
+
+
