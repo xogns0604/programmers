@@ -1,0 +1,18 @@
+package LV2.BinaryTransformRepeat;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String strs = "0111010";
+		
+		System.out.println(new Solution().solution(strs));
+		
+	}
+
+}
+
+
+
+
+

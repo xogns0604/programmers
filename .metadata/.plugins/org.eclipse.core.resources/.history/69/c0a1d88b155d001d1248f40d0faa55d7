@@ -1,0 +1,43 @@
+
+//https://programmers.co.kr/learn/courses/30/lessons/43165
+package LV3.integerTriangle;
+
+
+public class Solution {
+	
+	int[][] triangleOut;
+	int num = 0;
+	
+	public int solution(int[][] triangle) {
+		
+		triangleOut = triangle;
+		
+		triangleMethod(0, 0, 0);
+        return num;
+    }
+		 
+		 
+	void triangleMethod(int sum, int depth, int width) {
+		System.out.println("-");
+		if(depth == triangleOut.length) {
+			
+			if(num < sum) num = sum+=triangleOut[depth][width];
+			System.out.println(num);
+			return;
+		}
+		
+		System.out.println(triangleOut.length + " - " + depth + " - " + sum);
+		for(int i=width ; i<=width+1 ; i++) {
+			System.out.println(depth);
+			triangleMethod(sum + triangleOut[depth][i], depth+1,i);
+			System.out.println(depth);
+		}
+	}
+	
+	
+
+
+}
+
+
+// for문으로 할지 깊이 탐색알고리즘을 쓸지 고민

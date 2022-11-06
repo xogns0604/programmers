@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;codingTest/src/LV3/targetNum&apos; to &apos;integerTriangle&apos;" description="Rename resource &apos;targetNum&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/LV3/targetNum" name="integerTriangle" stamp="1667654951239" updateReferences="true"/>
+</session>
