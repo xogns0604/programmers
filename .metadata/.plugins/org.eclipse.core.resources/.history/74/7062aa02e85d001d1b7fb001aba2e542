@@ -1,0 +1,16 @@
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/12938
+package LV3.bestSet;
+
+
+public class Solution {
+	
+	public int[] solution(int n, int s) {
+        int[] answer = {};
+        return answer;
+    }
+
+
+
+}
+

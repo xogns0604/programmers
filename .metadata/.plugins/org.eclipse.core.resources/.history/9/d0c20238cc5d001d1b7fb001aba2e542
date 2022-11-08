@@ -1,0 +1,35 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/42628
+package LV3.doublePriorityQueue;
+
+import java.util.ArrayList;
+
+public class Solution {
+	
+	public int[] solution(String[] operations) {
+		
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		
+		int[] answer = new int[2];
+		
+		for(String oper : operations) {
+			if(oper.equals("D 1")) {
+				
+			} else if (oper.equals("D -1")) {
+				
+				
+			} else {
+				
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+        return answer;
+    }
+
+}
+

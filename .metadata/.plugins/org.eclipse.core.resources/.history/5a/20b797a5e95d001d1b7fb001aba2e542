@@ -1,0 +1,11 @@
+package LV3.bestSet;
+
+
+public class Run {
+
+	public static void main(String[] args) {
+		
+		new Solution().solution(2, 9);
+	}
+}
+
