@@ -1,0 +1,57 @@
+
+package LV3.wordConversion;
+
+
+
+public class Solution {
+	
+	private boolean[] checked;
+	private int answer = 51; 
+	private String targetStr;
+	public int solution(String begin, String target, String[] words) {
+		
+		checked = new boolean[words.length];
+		targetStr = target;
+		
+		dfs(begin, words, 0);
+		
+		
+		
+		
+		
+	
+        return answer;
+    }
+	
+	private void dfs(String begin, String[] words, int count) {
+		if(begin.equals(targetStr)) {
+			answer = (answer > count) ? count : answer;
+			return;
+		}
+		
+		for(int i=0 ; i<words.length ; i++){
+			if(checked[i]) continue;
+			
+			boolean check = false;
+			for(int j=0 ; j<begin.length() ; j++) {
+				if(begin.charAt(j) != words[i].charAt(j)) {
+					check = true;
+				}
+			}
+			
+			if(check) {
+				checked[i] = true;
+				dfs(words[i], words, count++);
+				checked[i] = false;
+			}
+		}
+	}
+	
+	
+
+}
+
+
+//처음엔 다양한 패턴이 나오면 끝없이 루프를 돌며 완성되는 케이스도 있지 않을까 생각했다
+// 하지만 최소값을 구하는 과정이니 반복이 된다면 최소값이 나오지 않거나 완성되지 않을것으로 생각해 1단어는 1번밖에 못들어간다고 생각하고 코딩을 시작
+//문제의 힌트대로 DFS를 사용하기로 결정
